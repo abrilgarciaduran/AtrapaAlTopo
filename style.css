@@ -2,7 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #9c5872;
+  background: #ffcfbe;
 }
 body {
   padding: 0;
@@ -15,17 +15,21 @@ h1 {
   line-height: 1;
   margin-bottom: 0;
 }
+h4 {
+  margin: 3rem 2rem 1rem 2rem;
+}
+ul  {
+  margin: 1rem 2rem 3rem 2rem;
+}
 button {
-  height: 3rem;
-  background: #FFFFFF;
   padding: 0 3rem;
+  margin: 2rem 6rem;
   line-height: 1;
   border-radius: 1rem;
   font-family: 'Architects Daughter', cursive;
 }
-
 .score {
-  background: rgba(245, 196, 225, 0.2);
+  background: #c96d61;
   padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
@@ -35,7 +39,10 @@ button {
   height: 350px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto 60px auto;
+  margin: 60px auto 60px auto;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  background: #ff9d8e;
 }
 .hole {
   flex: 1 0 33.33%;
@@ -65,12 +72,18 @@ button {
 .hole.up .mole {
   top: 0;
 }
-.content {
-  margin: 40px 100px 0 100px;
-  display: flex;
-  justify-content: space-evenly;
+.infoContainer {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
   font-size: 2rem;
+  margin: 5% 5% 5% 10%;
 }
-.level {
+.half {
+  display: inline-flex;
+
+  align-items: flex-start;
+}
+.content {
   display: flex;
 }
